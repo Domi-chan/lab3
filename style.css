@@ -1,0 +1,42 @@
+body {
+    background-color: antiquewhite;
+}
+@media only screen and (max-width: 600px){
+    body {
+        background-color: burlywood;
+    }
+}
+.container{
+    display: flex;
+}
+.container .item {
+    padding: 10px;
+    flex: 1;
+    background-color: beige;
+    border: rgb(146, 102, 37) solid 1px;
+}
+@media only screen and (max-width: 768px){
+    .container {
+        flex-direction: column ;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-container .item {
+    padding: 10px;
+    flex: 1;
+    background-color: beige;
+    border: rgb(146, 102, 37) solid 1px;
+}
+@media only screen and (max-width: 960px){
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 768px){
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
